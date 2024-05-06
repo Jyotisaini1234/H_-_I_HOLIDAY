@@ -1,0 +1,26 @@
+{
+  "name": "h_-_i_holiday",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass SASS/main.scss CSS/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jyotisaini1234/H_-_I_HOLIDAY.git"
+  },
+  "author": "Jyoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jyotisaini1234/H_-_I_HOLIDAY/issues"
+  },
+  "homepage": "https://github.com/Jyotisaini1234/H_-_I_HOLIDAY#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "live-server": "^1.2.2"
+  }
+}

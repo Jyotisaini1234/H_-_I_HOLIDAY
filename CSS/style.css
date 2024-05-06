@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background-image: url(../img/Bali-1.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background: no-repeat;
+  object-fit: cover;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+}
+
+.nav-1 {
+  height: 7rem;
+  width: 75%;
+  display: flex;
+  background-color: #16293a;
+}
+
+.logo {
+  height: 7rem;
+  width: 4rem;
+}
