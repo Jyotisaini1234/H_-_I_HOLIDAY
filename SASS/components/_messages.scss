@@ -1,0 +1,23 @@
+.message {
+  width: 25rem;
+  height: 19rem;
+  display: flex;
+
+  flex-direction: row;
+  margin: 2rem auto 0rem 1.6rem;
+  &-img {
+    transform: translateX(126%);
+    @include respond(phone) {
+      width: 25rem;
+      height: 11rem;
+    }
+    @include respond(Tab-port) {
+      width: 25rem;
+      height: 11rem;
+    }
+    @include respond(Tab-land) {
+      width: 25rem;
+      height: 11rem;
+    }
+  }
+}

@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H & I Holiday</title>
+    <title>U & I Holiday</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/1d8de0d6a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container" id="Container">
       <div class="nav-1">
         <div class="logo">
-          <img src="img/logo.png" alt="logo" class="logo-1" />
-          <span class="holiday">U & I HOLIDAY</span>
-          <span class="holiday">DMC FOR INDONESIA</span>
+          <div class="logo-img">
+            <img src="img/logo.png" alt="logo" class="logo-1" />
+          </div>
+          <span class="holiday-1">U & I Holiday</span>
+          <span class="holiday-2">DMC for indonesia</span>
         </div>
         <div class="menu">
           <a href="#" class="menu-item menu-item-1"> Home</a>
@@ -21,6 +35,49 @@
           <a href="#" class="menu-item menu-item-4">Contact Us</a>
           <a href="#" class="menu-item menu-item-5"> Subscribe</a>
         </div>
+      </div>
+      <!-- /////////////form details/ -->
+      <div class="form-detail">
+        <form action="#" class="form">
+          <div class="form_group">
+            <input
+              type="email"
+              class="form_input"
+              required
+              id="email-id"
+              placeholder="user email id"
+            />
+            <label for="email-id" class="form_lable"
+              >Enter your user name</label
+            >
+          </div>
+          <div class="form_group">
+            <input
+              type="password"
+              class="form_input"
+              required
+              id="password"
+              placeholder="password"
+            />
+            <label for="password" class="form_lable">Enter your password</label>
+          </div>
+          <!-- //////////////////Remember password and Forgot password  -->
+          <div class="user_password">
+            <input type="radio" class="form_radio" id="radio" />
+            <label for="radio" class="form_lable">Remember Me</label>
+
+            <a href="#" class="forgot-password">Forgot password ?</a>
+          </div>
+          <!-- //////////////////New Registration -->
+          <div class="user_password-1">
+            <a href="#" class="user-new">New user ? Register Now</a>
+
+            <button href="#" class="user-login">LOGIN</button>
+          </div>
+        </form>
+      </div>
+      <div class="message">
+        <img src="img/jannaa.jpeg" alt="message-img" class="message-img" />
       </div>
     </div>
   </body>
