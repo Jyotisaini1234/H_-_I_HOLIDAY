@@ -1,0 +1,123 @@
+.nav-bar {
+  @include respond(Tab-port) {
+    display: none;
+  }
+  @include respond(Tab-land) {
+    display: none;
+  }
+  @include respond(Big-desktop) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: flex;
+  }
+  &-checkbox {
+    display: none;
+  }
+  &-button {
+    margin-top: -1rem;
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    top: 5rem;
+    right: 8rem;
+    z-index: 2000;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    @include respond(phone) {
+      opacity: 1;
+    }
+  }
+  /////function work
+  &-button:checked + &-cont {
+    width: 53%;
+    opacity: 1;
+    margin-left: -79%;
+  }
+
+  &-cont {
+    height: 90vh;
+    width: 0vw;
+    background-color: black;
+    margin-top: 25rem;
+    margin-left: -0%;
+    justify-content: center;
+    opacity: 0;
+    @include respond(phone) {
+      height: 90vh;
+      width: 53vw;
+      background-color: black;
+      margin-top: 5rem;
+      margin-left: -79%;
+      justify-content: center;
+    }
+
+    ul {
+      width: 90%;
+      height: 100%;
+      margin-left: 2rem;
+      .nav-bar-item {
+        list-style: none;
+        border-bottom: 1px solid rgb(185, 182, 182);
+        display: flex;
+
+        .nav-bar-link {
+          text-decoration: none;
+          color: white;
+          font-size: 1.6rem;
+          padding: 2rem;
+        }
+      }
+    }
+  }
+  &-icon {
+    position: relative;
+    margin-top: 2.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: white;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+  &-button:hover &-icon:before {
+    top: -1rem;
+  }
+  &-button:hover &-icon:after {
+    top: 1rem;
+  }
+  &-checkbox:checked + &-button &-icon {
+    background-color: transparent;
+  }
+  &-checkbox:checked + &-button &-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &-checkbox:checked + &-button &-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+.nav-bar-button:checked + .form-container {
+  visibility: hidden;
+}

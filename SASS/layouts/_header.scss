@@ -7,26 +7,33 @@
   background-size: cover;
   @include respond(phone) {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+    padding: 0;
   }
   @include respond(Tab-port) {
     height: 100vh;
-    width: 100vh;
-    // display: block;
+    width: 100vw;
+    padding: 0;
     flex-direction: column;
   }
   @include respond(Tab-land) {
     height: 100vh;
-    width: 100vh;
-    // display: block;
+    width: 100vw;
+    padding: 0;
+
     flex-direction: column;
+  }
+  @include respond(Big-desktop) {
+    height: 100vh;
+    width: 100vw;
   }
 }
 
 .nav-1 {
   height: 8rem;
   margin: 4rem auto;
-  width: 90%;
+  padding: 1rem;
+  width: 90vw;
   display: flex;
   border-radius: 5px;
   background-color: #16293a;
@@ -34,76 +41,134 @@
   align-items: center;
   text-align: center;
   @include respond(phone) {
-    height: 6rem;
+    height: 4rem;
     margin: 2 auto;
-    width: 100%;
+    width: 70%;
   }
   @include respond(Tab-land) {
-    height: 6rem;
+    height: 5rem;
     margin: 4 auto;
     width: 80%;
   }
   @include respond(Tab-port) {
-    height: 6rem;
+    height: 5rem;
     margin: 4 auto;
     width: 90%;
   }
 }
 .logo {
-  height: 2rem;
+  // margin-bottom: 1rem;
   width: 25rem;
-  align-items: center;
+  height: 6.5rem;
   display: flex;
+  margin-left: -0.5rem;
   &-img {
-    height: 2.5rem;
-    width: 4rem;
-    margin: -2.1rem 1rem 1rem 1rem;
-    @include respond(phone) {
-      height: 1.5rem;
-      width: 3rem;
+    align-items: center;
+    justify-content: center;
 
-      // margin: auto;
-    }
-    @include respond(Tab-port) {
-      height: 1.5rem;
-      width: 3rem;
+    margin-top: -0.5rem;
+    // @include respond(phone) {
+    //   margin-top: -0.5rem;
+    // }
+    .logo-1 {
+      background-size: cover;
+      height: 6.6rem;
+      width: 11.7rem;
+      margin-top: 0.5rem;
 
-      // margin: auto;
-    }
-    @include respond(Tab-land) {
-      height: 1.5rem;
-      width: 3rem;
+      // margin-bottom: 1rem;
 
-      // margin: auto;
+      @include respond(phone) {
+        height: 5.5rem;
+        width: 5.7rem;
+        margin-top: 1rem;
+      }
+      @include respond(Tab-port) {
+        height: 2.8rem;
+        width: 6rem;
+        margin-top: 1rem;
+      }
+      @include respond(Tab-land) {
+        height: 4.5rem;
+        width: 7rem;
+        margin-top: 1.5rem;
+      }
     }
   }
+
   .holiday-1 {
-    // display: block;
     color: white;
-    // height: 1.5rem;
-    margin-top: -3rem;
+    margin: 1rem -3rem auto;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     font-weight: 900;
+    @include respond(phone) {
+      margin: 1.2rem -1.9rem;
+      font-size: 1.7rem;
+    }
+    @include respond(Tab-port) {
+      margin: 0.9rem -0.1rem;
+      font-size: 1.7rem;
+    }
+    @include respond(Tab-land) {
+      margin: 1.6rem -6.1rem 0;
+      font-size: 1.6rem;
+    }
+    @include respond(Big-desktop) {
+      margin: 0.9rem -3.9rem;
+      font-size: 2.2rem;
+    }
   }
   .holiday-2 {
     color: white;
     font-weight: 500;
     letter-spacing: 0.2rem;
-    font-size: 1rem;
-    margin: 3rem -19.1rem;
+    font-size: 1.3rem;
+    margin: 3.9rem -17.5rem;
+
+    @include respond(phone) {
+      margin: 3rem -13rem;
+      font-size: 1rem;
+    }
+    @include respond(Tab-port) {
+      margin: 3rem -13rem;
+      font-size: 1rem;
+    }
+    @include respond(Tab-land) {
+      margin: 3.5rem -12.7rem;
+      font-size: 1rem;
+    }
+    @include respond(Big-desktop) {
+      margin: 4rem -16.9rem;
+      font-size: 1rem;
+    }
   }
 }
 .menu {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.6rem;
   width: 50%;
   justify-content: space-evenly;
+  @include respond(phone) {
+    display: none;
+    width: 0;
+  }
   &-item {
     color: white;
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 1.6rem;
     font-weight: 800;
+    @include respond(phone) {
+    }
+    @include respond(Tab-port) {
+      font-size: 1rem;
+      font-weight: 500;
+      opacity: 1;
+    }
+    @include respond(Tab-land) {
+      font-size: 1rem;
+      font-weight: 500;
+    }
   }
 }
