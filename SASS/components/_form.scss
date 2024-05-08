@@ -3,6 +3,7 @@
   width: 100%;
   align-content: center;
   flex-direction: row;
+  padding: 5rem;
   .form-detail {
     background-color: $white-color;
     box-shadow: 0 1rem 2rem rgba(black, 0.2rem);
@@ -16,19 +17,19 @@
     // flex-direction: row;
     border-radius: 10px;
     @include respond(phone) {
-      margin-left: 63%;
+      margin-left: auto;
       width: 20rem;
       height: 14rem;
     }
     @include respond(Tab-port) {
       width: 22rem;
       height: 13rem;
-      margin-left: 63%;
+      margin-left: auto;
     }
     @include respond(Tab-land) {
       width: 27rem;
       height: 15rem;
-      margin-left: 63%;
+      margin-left: auto;
     }
     .form {
       justify-content: center;

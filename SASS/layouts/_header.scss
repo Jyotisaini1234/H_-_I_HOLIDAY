@@ -67,9 +67,7 @@
     justify-content: center;
 
     margin-top: -0.5rem;
-    // @include respond(phone) {
-    //   margin-top: -0.5rem;
-    // }
+
     .logo-1 {
       background-size: cover;
       height: 6.6rem;
@@ -103,10 +101,7 @@
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     font-weight: 900;
-    @include respond(phone) {
-      margin: 1.2rem -1.9rem;
-      font-size: 1.7rem;
-    }
+
     @include respond(Tab-port) {
       margin: 0.9rem -0.1rem;
       font-size: 1.7rem;
@@ -119,6 +114,10 @@
       margin: 0.9rem -3.9rem;
       font-size: 2.2rem;
     }
+    @include respond(phone) {
+      margin: 1.2rem -5.9rem;
+      font-size: 1.7rem;
+    }
   }
   .holiday-2 {
     color: white;
@@ -127,10 +126,6 @@
     font-size: 1.3rem;
     margin: 3.9rem -17.5rem;
 
-    @include respond(phone) {
-      margin: 3rem -13rem;
-      font-size: 1rem;
-    }
     @include respond(Tab-port) {
       margin: 3rem -13rem;
       font-size: 1rem;
@@ -141,6 +136,10 @@
     }
     @include respond(Big-desktop) {
       margin: 4rem -16.9rem;
+      font-size: 1rem;
+    }
+    @include respond(phone) {
+      margin: 3rem -13rem;
       font-size: 1rem;
     }
   }
