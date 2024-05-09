@@ -29,6 +29,15 @@ body {
     body {
       padding: 0; } }
 
+.careers {
+  width: 100%;
+  height: 20rem;
+  background-color: red;
+  position: relative;
+  opacity: 0; }
+  .careers :target {
+    opacity: 1; }
+
 .form-container {
   display: flex;
   width: 100%;
@@ -223,13 +232,280 @@ body {
         width: 32rem;
         height: 13rem; } }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: rgba(224, 220, 220, 0.562); }
+
+.section-about {
+  display: block;
+  flex-direction: column;
+  padding: 0 5rem;
+  font-family: "Poppins-Regular"; }
+
+.about-us-container1 {
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  background-image: url(../img/about-us.jpg);
+  background-size: cover;
+  margin-top: 3rem; }
+  .about-us-container1 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 10;
+    color: #222121;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins-Regular"; }
+
+.about-us-container2 {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-family: "Poppins-Regular"; }
+  @media only screen and (max-width: 37.5em) {
+    .about-us-container2 {
+      margin-bottom: 7rem; } }
+  .about-us-container2 h1 {
+    color: red;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .about-us-container2 h1 {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .about-us-container2 h1 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about-us-container2 h1 {
+        font-size: 1.2rem; } }
+  .about-us-container2 p {
+    font-size: 1.6rem;
+    margin-top: 0.9rem;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: #2b2a2a; }
+    @media only screen and (max-width: 75em) {
+      .about-us-container2 p {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .about-us-container2 p {
+        font-size: 1.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about-us-container2 p {
+        font-size: 1rem;
+        letter-spacing: 0; } }
+  .about-us-container2 .p-2 {
+    margin-top: 1.7rem; }
+    .about-us-container2 .p-2 span {
+      color: black;
+      font-weight: 800;
+      margin-top: 3rem;
+      font-size: 2rem; }
+      @media only screen and (max-width: 75em) {
+        .about-us-container2 .p-2 span {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .about-us-container2 .p-2 span {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .about-us-container2 .p-2 span {
+          font-size: 1.2rem;
+          letter-spacing: 0; } }
+
+.about-us-container3 {
+  background-image: url(../img/about-us-2.jpeg);
+  height: 17rem;
+  margin-top: 3rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins-Regular";
+  justify-content: space-around;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .about-us-container3 {
+      flex-direction: column;
+      margin-top: 3rem; } }
+  .about-us-container3 .Travel-area {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .about-us-container3 .Travel-area {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .about-us-container3 .Travel-area {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about-us-container3 .Travel-area {
+        font-size: 1rem; } }
+    .about-us-container3 .Travel-area h2 {
+      color: orangered; }
+
+.contatiner-p {
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .contatiner-p {
+      margin-bottom: 20rem; } }
+  .contatiner-p p {
+    font-family: "Poppins-Regular";
+    font-size: 1.8rem;
+    font-weight: 100px;
+    letter-spacing: 1.3px;
+    color: #2b2a2a; }
+    @media only screen and (max-width: 37.5em) {
+      .contatiner-p p {
+        letter-spacing: none;
+        font-size: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .contatiner-p p {
+        letter-spacing: 1px;
+        font-size: 1rem; } }
+
+.service-offered {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 37.5em) {
+    .service-offered {
+      margin-top: 8rem;
+      margin-bottom: 6rem; } }
+  .service-offered h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .service-offered .fig-cont {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .service-offered .fig-cont {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 75em) {
+      .service-offered .fig-cont {
+        flex-direction: row;
+        align-items: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .service-offered .fig-cont {
+        flex-direction: column;
+        align-items: center; } }
+  .service-offered-item {
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 2;
+    justify-content: space-evenly; }
+    @media only screen and (max-width: 37.5em) {
+      .service-offered-item {
+        flex-direction: column; } }
+    .service-offered-item-fig {
+      display: flex;
+      background-size: cover;
+      height: 12rem;
+      width: 12rem;
+      margin-top: 4rem;
+      flex-direction: column; }
+      .service-offered-item-fig span {
+        font-size: 1.6rem; }
+        @media only screen and (max-width: 37.5em) {
+          .service-offered-item-fig span {
+            font-size: 1rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .service-offered-item-fig span {
+            font-size: 1.2rem;
+            height: 10rem;
+            width: 10rem; } }
+        @media only screen and (max-width: 75em) {
+          .service-offered-item-fig span {
+            font-size: 1.2rem;
+            height: 10rem;
+            width: 10rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .service-offered-item-fig {
+          margin-top: 3rem; } }
+
+.last-paragraph {
+  width: 100%;
+  display: flex;
+  height: 40rem;
+  margin-top: 6rem;
+  justify-content: center; }
+  .last-paragraph h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .last-paragraph h1 {
+        font-size: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .last-paragraph h1 {
+        font-size: 1.6rem; } }
+  .last-paragraph .last-cont {
+    position: absolute;
+    margin-top: 4rem;
+    height: 32rem;
+    width: 100%;
+    padding: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .last-paragraph .last-cont {
+        width: 100%;
+        height: 30rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .last-paragraph .last-cont {
+        width: 100%;
+        height: 24rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .last-paragraph .last-cont {
+        width: 100%;
+        height: 19rem; } }
+    .last-paragraph .last-cont img {
+      background-size: cover;
+      height: 32rem;
+      width: 100%;
+      position: relative; }
+      @media only screen and (max-width: 56.25em) {
+        .last-paragraph .last-cont img {
+          width: 100%;
+          height: 24rem; } }
+      @media only screen and (max-width: 75em) {
+        .last-paragraph .last-cont img {
+          width: 100%;
+          height: 30rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .last-paragraph .last-cont img {
+          width: 100%;
+          height: 19rem; } }
+
 .container {
   height: 100%;
   width: 100vw;
   flex-direction: column;
   position: absolute;
   background-image: url(../img/Bali-1.jpeg);
-  background-size: cover; }
+  background-size: cover;
+  padding: 0 4rem; }
   @media only screen and (max-width: 37.5em) {
     .container {
       height: 100vh;
@@ -253,40 +529,41 @@ body {
       width: 100vw; } }
 
 .section-nav {
-  display: flex;
+  display: block;
   height: 8rem;
   width: 100%;
   margin-top: 2rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .section-nav {
-      height: 5rem; } }
+      height: 5rem;
+      width: 100%; } }
   .section-nav .nav-1 {
     height: 8rem;
     margin: 0rem auto;
-    padding: 1rem;
-    width: 90vw;
+    padding: 0rem;
+    width: 100%;
     display: flex;
     border-radius: 5px;
     background-color: #16293a;
     justify-content: space-between;
     align-items: center;
     text-align: center; }
-    @media only screen and (max-width: 37.5em) {
-      .section-nav .nav-1 {
-        height: 4rem;
-        margin: 2 auto;
-        width: 70%; } }
     @media only screen and (max-width: 75em) {
       .section-nav .nav-1 {
         height: 5rem;
         margin: 4 auto;
-        width: 80%; } }
+        width: 100%; } }
     @media only screen and (max-width: 56.25em) {
       .section-nav .nav-1 {
         height: 5rem;
         margin: 4 auto;
-        width: 90%; } }
+        width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-nav .nav-1 {
+        height: 5.5rem;
+        margin: 2 auto;
+        width: 100%; } }
   .section-nav .logo {
     width: 25rem;
     height: 6.5rem;
@@ -300,12 +577,8 @@ body {
         background-size: cover;
         height: 6.6rem;
         width: 11.7rem;
-        margin-top: 0.5rem; }
-        @media only screen and (max-width: 37.5em) {
-          .section-nav .logo-img .logo-1 {
-            height: 5.5rem;
-            width: 5.7rem;
-            margin-top: 1rem; } }
+        margin-top: 0.5rem;
+        margin-left: 1rem; }
         @media only screen and (max-width: 56.25em) {
           .section-nav .logo-img .logo-1 {
             height: 2.8rem;
@@ -316,6 +589,11 @@ body {
             height: 4.5rem;
             width: 7rem;
             margin-top: 1.5rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .section-nav .logo-img .logo-1 {
+            height: 5.5rem;
+            width: 5.7rem;
+            margin-top: 1rem; } }
     .section-nav .logo .holiday-1 {
       color: white;
       margin: 1rem -3rem auto;
@@ -485,7 +763,11 @@ body {
 
 .nav-bar-icon {
   position: relative;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  margin-left: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav-bar-icon {
+      margin-left: 4rem; } }
   .nav-bar-icon, .nav-bar-icon::before, .nav-bar-icon::after {
     width: 3rem;
     height: 2px;

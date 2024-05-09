@@ -3,6 +3,13 @@
     @content;
   }
 }
+@mixin absCenter {
+  position: absolute;
+  left: 50%;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 ////@media Query Manage
 // 0-600px: phone;
 // 600-900px:Tablet portrait

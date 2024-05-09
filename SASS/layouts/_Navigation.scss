@@ -108,6 +108,10 @@
   &-icon {
     position: relative;
     margin-top: 2.5rem;
+    margin-left: 4rem;
+    @include respond(phone) {
+      margin-left: 4rem;
+    }
 
     &,
     &::before,

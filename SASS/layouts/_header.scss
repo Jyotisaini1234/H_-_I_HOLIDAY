@@ -5,6 +5,7 @@
   position: absolute;
   background-image: url(../img/Bali-1.jpeg);
   background-size: cover;
+  padding: 0 4rem;
   @include respond(phone) {
     height: 100vh;
     width: 100vw;
@@ -29,39 +30,41 @@
   }
 }
 .section-nav {
-  display: flex;
+  display: block;
   height: 8rem;
   width: 100%;
   margin-top: 2rem;
   position: relative;
   @include respond(phone) {
     height: 5rem;
+    width: 100%;
   }
   .nav-1 {
     height: 8rem;
     margin: 0rem auto;
-    padding: 1rem;
-    width: 90vw;
+    padding: 0rem;
+    width: 100%;
     display: flex;
     border-radius: 5px;
     background-color: #16293a;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    @include respond(phone) {
-      height: 4rem;
-      margin: 2 auto;
-      width: 70%;
-    }
+
     @include respond(Tab-land) {
       height: 5rem;
       margin: 4 auto;
-      width: 80%;
+      width: 100%;
     }
     @include respond(Tab-port) {
       height: 5rem;
       margin: 4 auto;
-      width: 90%;
+      width: 100%;
+    }
+    @include respond(phone) {
+      height: 5.5rem;
+      margin: 2 auto;
+      width: 100%;
     }
   }
   .logo {
@@ -81,14 +84,8 @@
         height: 6.6rem;
         width: 11.7rem;
         margin-top: 0.5rem;
+        margin-left: 1rem;
 
-        // margin-bottom: 1rem;
-
-        @include respond(phone) {
-          height: 5.5rem;
-          width: 5.7rem;
-          margin-top: 1rem;
-        }
         @include respond(Tab-port) {
           height: 2.8rem;
           width: 6rem;
@@ -98,6 +95,11 @@
           height: 4.5rem;
           width: 7rem;
           margin-top: 1.5rem;
+        }
+        @include respond(phone) {
+          height: 5.5rem;
+          width: 5.7rem;
+          margin-top: 1rem;
         }
       }
     }
