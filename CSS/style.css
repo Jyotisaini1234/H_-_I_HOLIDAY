@@ -15,6 +15,9 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 30%; } }
+  @media only screen and (max-width: 23.43em) {
+    html {
+      font-size: 20%; } }
   @media only screen and (max-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -29,21 +32,179 @@ body {
     body {
       padding: 0; } }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.careers-main {
+  width: 100%;
+  padding: 0 4rem; }
+
 .careers {
   width: 100%;
-  height: 20rem;
-  background-color: red;
-  position: relative;
-  opacity: 0; }
-  .careers :target {
-    opacity: 1; }
+  height: 100vh;
+  position: absolute;
+  flex-direction: column; }
+
+.careers_content {
+  height: 100%;
+  width: 100%;
+  padding: 2rem; }
+  .careers_content .careers-img {
+    background-image: url(../img/about-us.jpg);
+    height: 20rem;
+    width: 93%;
+    align-items: center;
+    margin-left: 4rem;
+    background-size: cover;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .careers_content .careers-img {
+        margin-left: 1rem; } }
+    .careers_content .careers-img h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+      color: #1f1e1e;
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+
+.career-text {
+  height: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  @media only screen and (max-width: 37.5em) {
+    .career-text {
+      width: 100%;
+      display: block;
+      flex-direction: column;
+      justify-content: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .career-text {
+      width: 100%;
+      display: block;
+      flex-direction: column;
+      justify-content: center; } }
+  .career-text .content {
+    margin-left: 2px;
+    height: 30rem;
+    width: 50%;
+    flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .career-text .content {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 15rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .career-text .content {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 25rem; } }
+    .career-text .content h1 {
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      letter-spacing: 0.3rem;
+      font-weight: 1800; }
+      @media only screen and (max-width: 37.5em) {
+        .career-text .content h1 {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .career-text .content h1 {
+          font-size: 1.6rem; } }
+    .career-text .content .main-content {
+      width: 100%;
+      font-size: 1.7rem;
+      align-items: center;
+      text-align: justify;
+      margin-top: 2rem;
+      font-weight: 400;
+      color: #3f3e3e;
+      letter-spacing: 0.1rem;
+      line-height: 2.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .career-text .content .main-content {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .career-text .content .main-content {
+          font-size: 1.6rem; } }
+  .career-text .content-img {
+    background-image: url(../img/careers.jpg);
+    width: 40%;
+    background-size: cover;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    display: block; }
+    @media only screen and (max-width: 56.25em) {
+      .career-text .content-img {
+        width: 100%;
+        height: 22rem;
+        background-size: cover;
+        margin-top: -10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .career-text .content-img {
+        width: 100%;
+        height: 20rem;
+        margin-top: -24rem; } }
+    @media only screen and (max-width: 23.43em) {
+      .career-text .content-img {
+        width: 100%;
+        height: 18rem;
+        margin-top: -8rem; } }
+
+.careers-last {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 10rem;
+  align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .careers-last {
+      margin-top: 5rem;
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .careers-last {
+      margin-top: 20rem;
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .careers-last {
+      margin-top: 20rem;
+      margin-bottom: 4rem; } }
+  @media only screen and (max-width: 23.43em) {
+    .careers-last {
+      width: 100%;
+      height: 18rem;
+      margin-top: 31rem; } }
+  .careers-last p {
+    width: 80%;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #3f3e3e; }
+    .careers-last p a {
+      text-decoration: none;
+      color: #337ab7; }
 
 .form-container {
   display: flex;
   width: 100%;
   align-content: center;
   flex-direction: row;
-  padding: 5rem; }
+  padding: 5rem;
+  margin-left: 10.5rem; }
   .form-container .form-detail {
     background-color: #fff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -210,7 +371,7 @@ body {
   .message-img-cont {
     display: flex;
     width: 43rem;
-    margin-right: -40%;
+    margin-right: -50%;
     justify-content: center;
     height: 15rem;
     position: absolute;
@@ -237,12 +398,25 @@ body {
   padding: 0; }
 
 body {
-  background-color: rgba(224, 220, 220, 0.562); }
+  background-color: rgba(224, 220, 220, 0.562);
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.section-about-main {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 4rem;
+  width: 100%; }
 
 .section-about {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   display: block;
   flex-direction: column;
-  padding: 0 5rem;
+  padding: 0;
   font-family: "Poppins-Regular"; }
 
 .about-us-container1 {
@@ -271,6 +445,9 @@ body {
   margin-top: 3rem;
   font-family: "Poppins-Regular"; }
   @media only screen and (max-width: 37.5em) {
+    .about-us-container2 {
+      margin-bottom: -6rem; } }
+  @media only screen and (max-width: 23.43em) {
     .about-us-container2 {
       margin-bottom: 7rem; } }
   .about-us-container2 h1 {
@@ -358,9 +535,16 @@ body {
   height: 16rem;
   width: 100%;
   margin-top: 3rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .contatiner-p {
       margin-bottom: 20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .contatiner-p {
+      margin-bottom: 5rem;
+      display: inline-block; } }
+  @media only screen and (max-width: 23.43em) {
+    .contatiner-p {
+      margin-bottom: 17rem; } }
   .contatiner-p p {
     font-family: "Poppins-Regular";
     font-size: 1.8rem;
@@ -374,24 +558,34 @@ body {
     @media only screen and (max-width: 56.25em) {
       .contatiner-p p {
         letter-spacing: 1px;
-        font-size: 1rem; } }
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 75em) {
+      .contatiner-p p {
+        letter-spacing: 1px;
+        font-size: 2rem; } }
 
 .service-offered {
   width: 100%;
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 9rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .service-offered {
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .service-offered {
-      margin-top: 8rem;
       margin-bottom: 6rem; } }
   .service-offered h1 {
     width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .service-offered h1 {
+        font-size: 1.6rem; } }
   .service-offered .fig-cont {
     display: flex;
     width: 100%;
@@ -417,7 +611,8 @@ body {
     justify-content: space-evenly; }
     @media only screen and (max-width: 37.5em) {
       .service-offered-item {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-top: -2rem; } }
     .service-offered-item-fig {
       display: flex;
       background-size: cover;
@@ -447,7 +642,7 @@ body {
 .last-paragraph {
   width: 100%;
   display: flex;
-  height: 40rem;
+  height: 37rem;
   margin-top: 6rem;
   justify-content: center; }
   .last-paragraph h1 {
@@ -465,7 +660,8 @@ body {
   .last-paragraph .last-cont {
     position: absolute;
     margin-top: 4rem;
-    height: 32rem;
+    height: 30rem;
+    margin-left: 4rem;
     width: 100%;
     padding: 2rem; }
     @media only screen and (max-width: 75em) {
@@ -479,7 +675,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .last-paragraph .last-cont {
         width: 100%;
-        height: 19rem; } }
+        height: 14rem;
+        background-size: contain; } }
     .last-paragraph .last-cont img {
       background-size: cover;
       height: 32rem;
@@ -544,7 +741,7 @@ body {
     padding: 0rem;
     width: 100%;
     display: flex;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #16293a;
     justify-content: space-between;
     align-items: center;
@@ -683,7 +880,7 @@ body {
   display: none; }
 
 .nav-bar-button {
-  margin-top: -1rem;
+  margin-top: 1.4rem;
   background-color: transparent;
   height: 5rem;
   width: 5rem;
@@ -697,7 +894,8 @@ body {
   position: absolute; }
   @media only screen and (max-width: 37.5em) {
     .nav-bar-button {
-      opacity: 1; } }
+      opacity: 1;
+      margin-top: -0.5rem; } }
 
 .nav-bar-checkbox:checked ~ .nav-bar-background {
   transform: scale(80); }
