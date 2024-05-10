@@ -1,36 +1,35 @@
 .form-container {
   display: flex;
-  width: 100%;
+  width: 98%;
   align-content: center;
   flex-direction: row;
-  padding: 5rem;
-  margin-left: 10.5rem;
+  padding: 6rem 0rem;
+  // margin-left: 10.5rem;
   .form-detail {
     background-color: $white-color;
     box-shadow: 0 1rem 2rem rgba(black, 0.2rem);
-    width: 27rem;
+    width: 30rem;
     height: 17rem;
     position: relative;
     margin-right: 1rem;
     display: flex;
-    margin-left: 67%;
+    margin-left: 77%;
 
-    // flex-direction: row;
+    @include respond(Tab-port) {
+      width: 22rem;
+      height: 13rem;
+      margin-left: 70%;
+    }
+    @include respond(Tab-land) {
+      width: 27rem;
+      height: 15rem;
+      margin-left: 70%;
+    }
     border-radius: 10px;
     @include respond(phone) {
       margin-left: auto;
       width: 20rem;
       height: 14rem;
-    }
-    @include respond(Tab-port) {
-      width: 22rem;
-      height: 13rem;
-      margin-left: auto;
-    }
-    @include respond(Tab-land) {
-      width: 27rem;
-      height: 15rem;
-      margin-left: auto;
     }
     .form {
       justify-content: center;
