@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $color-grey-light;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-about-main {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 4rem;
+  width: 100%;
+}
+.section-about {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: block;
+  flex-direction: column;
+  padding: 0;
+  font-family: "Poppins-Regular";
+}
+.about-us-container1 {
+  display: flex;
+
+  width: 100%;
+  height: 18rem;
+  background-image: url(../img/about-us.jpg);
+  background-size: cover;
+  margin-top: 3rem;
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 10;
+    color: rgb(34, 33, 33);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins-Regular";
+  }
+}
+//////////////container 2
+.about-us-container2 {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-family: "Poppins-Regular";
+  @include respond(phone) {
+    margin-bottom: -6rem;
+  }
+  @include respond(min-phone) {
+    margin-bottom: 7rem;
+  }
+  h1 {
+    color: red;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    @include respond(Tab-land) {
+      font-size: 2.2rem;
+    }
+    @include respond(Tab-port) {
+      font-size: 1.8rem;
+    }
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+  p {
+    font-size: 1.6rem;
+    margin-top: 0.9rem;
+    letter-spacing: 1.3px;
+
+    font-weight: 100;
+    color: rgb(43, 42, 42);
+    @include respond(Tab-land) {
+      font-size: 1.6rem;
+    }
+    @include respond(Tab-port) {
+      font-size: 1.4rem;
+    }
+    @include respond(phone) {
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  }
+  .p-2 {
+    margin-top: 1.7rem;
+    span {
+      color: black;
+      font-weight: 800;
+      margin-top: 3rem;
+      font-size: 2rem;
+
+      @include respond(Tab-land) {
+        font-size: 2rem;
+      }
+      @include respond(Tab-port) {
+        font-size: 1.8rem;
+      }
+      @include respond(phone) {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+///////////////container 3
+
+.about-us-container3 {
+  background-image: url(../img/about-us-2.jpeg);
+  height: 17rem;
+  margin-top: 3rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins-Regular";
+
+  justify-content: space-around;
+  align-items: center;
+  @include respond(phone) {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .Travel-area {
+    font-size: 2rem;
+    // display: flex;
+    text-align: center;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    @include respond(Tab-land) {
+      font-size: 2rem;
+    }
+    @include respond(Tab-port) {
+      font-size: 1.7rem;
+    }
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+    h2 {
+      color: orangered;
+    }
+  }
+}
+/////////////paragraph section
+.contatiner-p {
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  margin-top: 3rem;
+  @include respond(Tab-port) {
+    margin-bottom: 20rem;
+  }
+  @include respond(phone) {
+    margin-bottom: 5rem;
+    display: inline-block;
+  }
+  @include respond(min-phone) {
+    margin-bottom: 17rem;
+  }
+  p {
+    font-family: "Poppins-Regular";
+    font-size: 1.8rem;
+    font-weight: 100px;
+    letter-spacing: 1.3px;
+    color: $color-black-light;
+    @include respond(phone) {
+      letter-spacing: none;
+      font-size: 1rem;
+    }
+    @include respond(Tab-port) {
+      letter-spacing: 1px;
+      font-size: 1.6rem;
+    }
+    @include respond(Tab-land) {
+      letter-spacing: 1px;
+      font-size: 2rem;
+    }
+  }
+}
+////////services offered
+.service-offered {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  @include respond(Tab-port) {
+    margin-bottom: 6rem;
+  }
+  @include respond(phone) {
+    margin-bottom: 6rem;
+  }
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+  }
+  .fig-cont {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    @include respond(Tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include respond(Tab-land) {
+      flex-direction: row;
+      align-items: center;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-item {
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 2;
+    justify-content: space-evenly;
+    @include respond(phone) {
+      flex-direction: column;
+      margin-top: -2rem;
+    }
+    &-fig {
+      display: flex;
+      background-size: cover;
+      height: 12rem;
+      width: 12rem;
+      margin-top: 4rem;
+      flex-direction: column;
+      span {
+        font-size: 1.6rem;
+        @include respond(phone) {
+          font-size: 1rem;
+        }
+        @include respond(Tab-port) {
+          font-size: 1.2rem;
+          height: 10rem;
+          width: 10rem;
+        }
+        @include respond(Tab-land) {
+          font-size: 1.2rem;
+          height: 10rem;
+          width: 10rem;
+        }
+      }
+      @include respond(phone) {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+////////////Last paragraph
+.last-paragraph {
+  width: 100%;
+  display: flex;
+  height: 37rem;
+  margin-top: 6rem;
+
+  justify-content: center;
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+    @include respond(Tab-port) {
+      font-size: 1.6rem;
+    }
+  }
+  .last-cont {
+    position: absolute;
+    margin-top: 4rem;
+    height: 30rem;
+    margin-left: 4rem;
+    width: 100%;
+    padding: 2rem;
+    @include respond(Tab-land) {
+      width: 100%;
+      height: 30rem;
+    }
+    @include respond(Tab-port) {
+      width: 100%;
+      height: 24rem;
+    }
+    @include respond(phone) {
+      width: 100%;
+      height: 14rem;
+      background-size: contain;
+    }
+    img {
+      background-size: cover;
+      height: 32rem;
+      width: 100%;
+      position: relative;
+
+      @include respond(Tab-port) {
+        width: 100%;
+        height: 24rem;
+      }
+      @include respond(Tab-land) {
+        width: 100%;
+        height: 30rem;
+      }
+      @include respond(phone) {
+        width: 100%;
+        height: 19rem;
+      }
+    }
+  }
+}

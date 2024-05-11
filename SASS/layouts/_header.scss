@@ -1,0 +1,185 @@
+.container {
+  height: 100%;
+  width: 100vw;
+  flex-direction: column;
+  position: absolute;
+  background-image: url(../img/Bali-1.jpeg);
+  background-size: cover;
+  padding: 0 4rem;
+  @include respond(phone) {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+  }
+  @include respond(Tab-port) {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    flex-direction: column;
+  }
+  @include respond(Tab-land) {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+
+    flex-direction: column;
+  }
+  @include respond(Big-desktop) {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+.section-nav {
+  display: block;
+  height: 8rem;
+  width: 100%;
+
+  margin-top: 2rem;
+  position: relative;
+  @include respond(phone) {
+    height: 5rem;
+    width: 100%;
+  }
+  .nav-1 {
+    height: 8rem;
+    margin: 0rem auto;
+    padding: 0rem;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    background-color: #16293a;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include respond(Tab-land) {
+      height: 5rem;
+      margin: 4 auto;
+      width: 100%;
+    }
+    @include respond(Tab-port) {
+      height: 5rem;
+      margin: 4 auto;
+      width: 100%;
+    }
+    @include respond(phone) {
+      height: 5.5rem;
+      margin: 2 auto;
+      width: 100%;
+    }
+  }
+  .logo {
+    // margin-bottom: 1rem;
+    width: 25rem;
+    height: 6.5rem;
+    display: flex;
+    margin-left: -0.5rem;
+    &-img {
+      align-items: center;
+      justify-content: center;
+
+      margin-top: -0.5rem;
+
+      .logo-1 {
+        background-size: cover;
+        height: 6.6rem;
+        width: 11.7rem;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+
+        @include respond(Tab-port) {
+          height: 2.8rem;
+          width: 6rem;
+          margin-top: 1rem;
+        }
+        @include respond(Tab-land) {
+          height: 4.5rem;
+          width: 7rem;
+          margin-top: 1.5rem;
+        }
+        @include respond(phone) {
+          height: 5.5rem;
+          width: 5.7rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .holiday-1 {
+      color: white;
+      margin: 1rem -3rem auto;
+      width: 100%;
+      font-size: 2.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 900;
+
+      @include respond(Tab-port) {
+        margin: 0.9rem -0.1rem;
+        font-size: 1.7rem;
+      }
+      @include respond(Tab-land) {
+        margin: 1.6rem -6.1rem 0;
+        font-size: 1.6rem;
+      }
+      @include respond(Big-desktop) {
+        margin: 0.9rem -3.9rem;
+        font-size: 2.2rem;
+      }
+      @include respond(phone) {
+        margin: 1.2rem -5.9rem;
+        font-size: 1.7rem;
+      }
+    }
+    .holiday-2 {
+      color: white;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      font-size: 1.3rem;
+      margin: 3.9rem -17.5rem;
+
+      @include respond(Tab-port) {
+        margin: 3rem -13rem;
+        font-size: 1rem;
+      }
+      @include respond(Tab-land) {
+        margin: 3.5rem -12.7rem;
+        font-size: 1rem;
+      }
+      @include respond(Big-desktop) {
+        margin: 4rem -16.9rem;
+        font-size: 1rem;
+      }
+      @include respond(phone) {
+        margin: 3rem -13rem;
+        font-size: 1rem;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    font-size: 1.6rem;
+    width: 50%;
+    justify-content: space-evenly;
+    @include respond(phone) {
+      display: none;
+      width: 0;
+    }
+    &-item {
+      color: white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 800;
+      @include respond(phone) {
+      }
+      @include respond(Tab-port) {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 1;
+      }
+      @include respond(Tab-land) {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

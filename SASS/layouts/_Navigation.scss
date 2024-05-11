@@ -1,0 +1,156 @@
+.nav-bar {
+  @include respond(Tab-port) {
+    display: none;
+  }
+  @include respond(Tab-land) {
+    display: none;
+  }
+  @include respond(Big-desktop) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: flex;
+  }
+  &-checkbox {
+    display: none;
+  }
+  &-button {
+    margin-top: 1.4rem;
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    top: 0.5rem;
+    right: 4rem;
+    z-index: 2000;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    @include respond(phone) {
+      opacity: 1;
+      margin-top: -0.5rem;
+    }
+  }
+  /////function work
+  &-checkbox:checked ~ &-background {
+    transform: scale(80);
+  }
+  &-checkbox:checked ~ &-cont {
+    opacity: 1;
+    width: 100%;
+    @include respond(phone) {
+      height: 80vh;
+      width: 50vw;
+      top: -2%;
+      background-color: black;
+      align-items: center;
+    }
+  }
+
+  &-background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    // transform: scale(100);
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
+  }
+
+  &-cont {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.266, 1.55);
+    @include respond(phone) {
+      height: 80vh;
+      width: 80vw;
+      align-items: center;
+    }
+  }
+
+  &-item {
+    margin: 1rem;
+  }
+  .nav-bar-list {
+    width: 90%;
+    height: 100%;
+    margin-left: 0.2rem;
+    position: absolute;
+
+    .nav-bar-item {
+      list-style: none;
+      border-bottom: 1px solid rgb(185, 182, 182);
+      display: flex;
+
+      .nav-bar-link {
+        text-decoration: none;
+        color: white;
+        font-size: 1.6rem;
+        padding: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-icon {
+    position: relative;
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+    @include respond(phone) {
+      margin-left: 4rem;
+    }
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: white;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+  &-button:hover &-icon:before {
+    top: -1rem;
+  }
+  &-button:hover &-icon:after {
+    top: 1rem;
+  }
+  &-checkbox:checked + &-button &-icon {
+    background-color: transparent;
+  }
+  &-checkbox:checked + &-button &-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &-checkbox:checked + &-button &-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}

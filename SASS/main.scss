@@ -1,0 +1,23 @@
+////abstracts
+@import "abstracts/functions";
+@import "abstracts/mixin";
+@import "abstracts/variable";
+////bases//
+@import "bases/animation";
+@import "bases/bases";
+@import "bases/typography";
+///components
+@import "components/button";
+@import "components/careeras";
+
+@import "components/form";
+@import "components/messages";
+@import "components/contact";
+
+@import "components/sactionabout";
+////layouts
+@import "layouts/header";
+@import "layouts/Navigation";
+
+///pages
+@import "pages/home";
