@@ -407,6 +407,21 @@ body {
         background-size: cover;
         margin-left: 0%; } }
 
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  top: 0%;
+  left: 3.4%;
+  position: absolute;
+  background-color: black;
+  opacity: 0; }
+  .contact_content {
+    top: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex; }
+
 * {
   margin: 0;
   padding: 0; }
