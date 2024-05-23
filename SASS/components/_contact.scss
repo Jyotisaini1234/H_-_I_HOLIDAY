@@ -1,28 +1,57 @@
 .contact {
-  height: 90vh;
-  width: 100%;
+  height: 100%;
   padding: 4rem;
+  width: 100%;
   display: grid;
-  border: 2px solid black;
   position: absolute;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 14rem;
+  margin-top: -2rem;
   grid-gap: 2rem;
+  // margin-right: 4rem;
   &_details_img {
+    background-image: url(../img/contact-banner.jpg);
+    display: flex;
     width: 100%;
-    grid-column: 1 / span 1;
+    height: 16rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 1;
     grid-row: 1/2;
+    h1 {
+      display: flex;
+      width: 100%;
+      color: white;
+      align-items: center;
+
+      margin-left: 15rem;
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: "Poppins-Regular";
+    }
+    @include respond(Tab-port) {
+      width: 90%;
+    }
+    @include respond(Tab-land) {
+      width: 100%;
+    }
+    @include respond(phone) {
+      width: 90%;
+    }
   }
   &_details-2 {
     width: 100%;
     grid-column: 1 / span 1;
     grid-row: 2/3;
+    margin-top: -0.5rem;
     p {
+      font-family: "Poppins-Regular";
       font-size: 1.6rem;
-      font-family: sans-serif;
-      line-height: 1.6rem;
-      word-spacing: 0.9rem;
+      line-height: 2.5rem;
+      letter-spacing: 1px;
+      padding: 1rem;
+      word-spacing: 0.2rem;
       color: $color-font;
       margin-top: 1rem;
     }
@@ -33,9 +62,10 @@
       justify-content: center;
       margin-top: 2rem;
       letter-spacing: 2px;
-      font-family: sans-serif;
-      font-size: 2rem;
-      font-weight: 400;
+      font-family: "Poppins-Regular";
+
+      font-size: 1.7rem;
+      font-weight: 800;
     }
   }
   &_details-3 {
@@ -44,8 +74,96 @@
     font-size: 3rem;
     color: red;
     font-weight: 900;
-    font-family: "Courier New", Courier, monospace !important;
+    font-family: "COOPBL_0" !important;
     padding: 0.5rem 0;
     text-align: center;
+  }
+  &_details4 {
+    span {
+      display: flex;
+      font-size: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .details4-map {
+      display: flex;
+      p {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        iframe {
+          height: 25rem;
+          width: 90vw;
+          margin-top: 2rem;
+          @include respond(phone) {
+            height: 25rem;
+            width: 90vw;
+          }
+          @include respond(Tab-port) {
+            height: 22rem;
+            width: 90vw;
+          }
+          @include respond(Tab-land) {
+            height: 25rem;
+            width: 90vw;
+          }
+        }
+      }
+    }
+  }
+  &_details5 {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(1, minmax(130px, min-content));
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    .details5_call {
+      align-items: center;
+      h2 {
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+    }
+    .details5_email {
+      justify-content: center;
+      align-items: center;
+      h2 {
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  &_details6 {
+    display: inline-block;
+    width: 100%;
+    margin-top: -3rem;
+    background-image: url(../img/contact-us.jpg);
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+
+    p {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }

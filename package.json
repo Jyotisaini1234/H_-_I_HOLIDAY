@@ -4,9 +4,7 @@
   "description": "landing page",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass SASS/main.scss CSS/style.css -w",
-    "devserver": "liver-server  --browser=chrome",
-    "start": "npm-run-all  --parallel devserver watch:sass",
+    "watch:sass": "node-sass SASS/main.scss CSS/style.css -w ",
     "compile:sass": "node-sass SASS/main.scss CSS/style.comp.css",
     "compress:css": "node-sass  CSS/style.css --output-style compress",
     "build:css": "npm-run-all compile:sass  compress:css "
@@ -24,12 +22,12 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.0"
   },
   "dependencies": {
-    "jquery": "^3.7.1",
-    "live-server": "^1.2.2"
+    "jquery": "^3.7.1"
   }
 }
